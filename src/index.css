@@ -1,0 +1,121 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+html{
+  background-color: #adadad;
+}
+.App{
+  background-color: #ccc;
+  width: 400px;
+  margin: 100px auto;
+  text-align: center;
+  padding: 10px;
+  border-radius: 15px;
+}
+form{
+  width: 80%;
+  margin: auto;
+  margin-bottom: 10px;
+}
+form input {
+  outline: none;
+  border: #ccc;
+  padding: 5px;
+  border-bottom: 1.5px solid #adadad;
+  background-color: #ccc;
+}
+form button {
+  background-color: #4285f4;
+  padding: 5px 20px;
+  border: #4285f4;
+  margin-left: 5px;
+  border-radius: 5px;  
+  color: white;
+}
+.tab button {
+  background-color: #ccc;
+  border: #ccc;
+  margin: 0 3px;
+}
+ul {
+  list-style: none;
+  margin-left: -35px;
+}
+li {
+    background-color: #f0f0f0; /* Фоновый цвет элементов списка */
+    padding: 10px; /* Внутренние отступы */
+    margin: 5px 0; /* Отступы между элементами списка */
+    border-radius: 8px; /* Скругленные углы */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легкая тень */
+    display: flex;
+    position: relative;
+}
+li .right {
+  position: absolute;
+  right: 15px;
+  top: 5px;
+}
+li .right button {
+  margin-right: 8px;
+  border: white;
+  background-color: #4285f4;
+  border-radius: 3px;
+  width: 30px;
+  height: 30px;
+}
+li .change {
+  outline: none;
+  border: #fff;
+  padding: 5px;
+  border-bottom: 1.5px solid #adadad;
+  background-color: #f0f0f0;
+  color: #686868;
+}
+
+li .btn-change {
+  background-color: #4285f4;
+  padding: 5px 20px;
+  border: #4285f4;
+  margin-left: 15px;
+  border-radius: 5px;  
+  color: white;
+}
+
+.circle-button-wrapper {
+    display: flex;
+    flex-direction:row;
+    gap: 15px; /* Отступ между кнопками */
+    align-items: flex-start; /* Выравнивание кнопок слева */
+  }
+  
+  .circle-button {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc; /* Серый цвет для границы */
+    border-radius: 50%; /* Делаем кнопку круглой */
+    background-color: white; /* Белый фон по умолчанию */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Анимация при изменении */
+  }
+  
+  .circle-button::after {
+    content: ''; 
+    font-size: 14px;
+    color: transparent; 
+  }
+  
+  .circle-button.active {
+    background-color: #4285f4; 
+    border-color: #4285f4; 
+  }
+  
+  .circle-button.active::after {
+    content: '✔'; 
+    color: white; 
+    font-size: 12px;
+  }
+  
